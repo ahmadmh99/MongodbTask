@@ -1,0 +1,28 @@
+Dont forget to put "Authorization" header in any request with the generated user token :::   {Authorization: {token}}
+
+
+
+Create Task: POST http://localhost:3000/api/tasks
+
+Request body: { "title": "Task 1", "description": "Description of Task 1", "status": "pending", "dueDate": "2024-03-10", "userId": {userID} }
+Get All Tasks: GET http://localhost:3000/api/tasks
+
+Update Task: PATCH http://localhost:3000/api/tasks/:taskId
+
+Replace :taskId with the ID of an existing task.
+Request body: { "status": "Complete" }
+Delete Task: DELETE http://localhost:3000/api/tasks/:taskId
+
+Replace :taskId with the ID of an existing task.
+Create Category: POST http://localhost:3000/api/categories
+
+Request body: { "name": "Category 1" }
+Get All Categories: GET http://localhost:3000/api/categories
+
+Update Category: PATCH http://localhost:3000/api/categories/:categoryId
+
+Replace :categoryId with the ID of an existing category.
+Request body: { "name": "Updated Category 1" }
+Delete Category: DELETE http://localhost:3000/api/categories/:categoryId
+
+Replace :categoryId with the ID of an existing category.
